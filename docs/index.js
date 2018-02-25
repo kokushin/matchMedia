@@ -9,16 +9,15 @@ handleScaleChange(mql);
 
 /* クエリの条件分に従って処理させる */
 function handleScaleChange(mql) {
-  const body = document.body;
   const text = document.getElementById('text');
 
   console.log(mql);
 
   if (mql.matches) {
-    body.style.background = 'red';
+    text.style.color = 'red';
     text.innerHTML = '767px以下です';
   } else {
-    body.style.background = 'blue';
+    text.style.color = 'blue';
     text.innerHTML = '768px以上です';
   }
 }
